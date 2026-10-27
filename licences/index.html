@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Licences · Tree Years</title>
+<meta name="description" content="Tree Years: plant a tree, look in once a day, and watch it grow for years.">
+
+<style>
+:root {
+  --bg: #F4F1EA; --surface: #FFFFFF; --text: #17201A; --secondary: #4C5A50; --line: #DCD5C6;
+  --accent: #835E10; --sun: #D9A93A; --field: #0E1511; --field-text: #ECEEE6;
+  --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0E1511; --surface: #17201A; --text: #ECEEE6; --secondary: #B9C0B2; --line: #2E3A32; --accent: #E8C26A; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 var(--sans); }
+a { color: var(--accent); }
+a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 max(20px, env(safe-area-inset-left)) 0 max(20px, env(safe-area-inset-right)); }
+header.bar { border-bottom: 1px solid var(--line); }
+header.bar .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-block: 16px; }
+.name { font: 600 22px/1 var(--serif); color: var(--text); text-decoration: none; }
+.name em { font-weight: 400; }
+main { padding-block: 32px 56px; }
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 36px; margin: 0 0 20px; }
+h2 { font-size: 24px; margin: 36px 0 10px; }
+h3 { font-size: 19px; margin: 28px 0 8px; }
+p, li { max-width: 68ch; }
+code { font-size: 0.88em; background: var(--surface); padding: 1px 5px; border-radius: 5px; }
+blockquote { margin: 0 0 20px; padding: 10px 14px; border-left: 3px solid var(--sun); background: var(--surface); }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+footer { border-top: 1px solid var(--line); font-size: 15px; color: var(--secondary); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 18px; padding-block: 20px 40px; }
+.draft { background: #8A1C1C; color: #FFFFFF; text-align: center; padding: 8px; font-weight: 600; }
+.hero { position: relative; background: var(--field); color: var(--field-text); }
+/* The scene keeps its proportions, so the tree is never cut, and fades into the field on wide screens. */
+.hero img { display: block; width: 100%; max-width: 980px; max-height: 70vh; margin: 0 auto; aspect-ratio: 7 / 5;
+  object-fit: cover; object-position: 50% 76%; }
+@media (min-width: 980px) {
+  .hero img { -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent); }
+}
+.hero .wrap { padding-block: 8px 36px; }
+.hero h1 { font-size: clamp(44px, 9vw, 64px); font-weight: 300; margin: 0 0 12px; }
+.hero h1 em { font-weight: 300; }
+.hero p { font-size: 20px; color: #B9C0B2; margin: 0; }
+</style>
+</head>
+<body>
+
+<header class="bar"><div class="wrap"><a class="name" href="../">Tree <em>Years</em></a></div></header>
+
+<main><div class="wrap">
+<h1>Licences and Acknowledgements</h1>
+<p>Tree Years<br>© 2026 Harald Meyer. All rights reserved.</p>
+<p>The app's code, its tree pictures, app icons, start and launch pictures, colours and sounds were made for Tree Years. The parts that come from others are listed below.</p>
+<h2>Code</h2>
+<p>Tree Years uses no third-party libraries or Swift packages. It's built only on Apple's frameworks that are part of iOS (SwiftUI, SwiftData, MapKit, Swift Charts, AVFoundation, UIKit, Core Graphics and Foundation).</p>
+<p>The suggested tree names are made of word lists written for the app.</p>
+<h2>Climate data</h2>
+<p>The climate of Berlin (monthly values for 1991–2020, extremes since 1957) is the basis of the simulated weather.</p>
+<ul><li>Datenbasis: Deutscher Wetterdienst (DWD), licensed under CC BY 4.0 (<a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>). Changed: the monthly values are used to simulate daily weather.</li><li>Days with precipitation and humidity: NOAA National Centers for Environmental Information (NCEI).</li><li>Compiled in the English Wikipedia article "Berlin", section Climate (<a href="https://en.wikipedia.org/wiki/Berlin#Climate">https://en.wikipedia.org/wiki/Berlin#Climate</a>), retrieved 19 October 2026.</li></ul>
+<h2>Map</h2>
+<p>The map on a tree's place screen is provided by Apple Maps through MapKit. Its data sources are listed under "Legal" on the map itself.</p>
+<h2>Fonts and symbols</h2>
+<p>The app uses only the fonts built into iOS: San Francisco and, for titles and tree names, New York. No fonts are bundled. Icons in the interface are SF Symbols, provided by Apple as part of iOS.</p>
+<h2>Pictures</h2>
+<p>The app icons (in the Field light and Overworld styles), the start screen and launch screen scenes, and the pictures of the starting ages were made for Tree Years from its own tree generator. All trees in the app are painted on the device by the app's own code.</p>
+<h2>Sounds</h2>
+<p>The sound of the tree is synthesised on the device from noise, as it plays. The app contains no recordings.</p>
+<h2>Algorithms</h2>
+<p>The simulation's random numbers use SplitMix64, written in 2015 by Sebastiano Vigna and dedicated to the public domain (<a href="https://prng.di.unimi.it/splitmix64.c">https://prng.di.unimi.it/splitmix64.c</a>). No licence is required; the credit is a courtesy.</p>
+</div></main>
+<footer><div class="wrap"><a href="../support/">Support</a> <a href="../privacy/">Privacy</a> <a href="../datenschutz/">Datenschutz</a> <a href="../imprint/">Imprint</a> <a href="../impressum/">Impressum</a> <a href="../licences/">Licences</a></div></footer>
+</body>
+</html>

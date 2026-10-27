@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tree Years</title>
+<meta name="description" content="Tree Years: plant a tree, look in once a day, and watch it grow for years.">
+
+<style>
+:root {
+  --bg: #F4F1EA; --surface: #FFFFFF; --text: #17201A; --secondary: #4C5A50; --line: #DCD5C6;
+  --accent: #835E10; --sun: #D9A93A; --field: #0E1511; --field-text: #ECEEE6;
+  --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0E1511; --surface: #17201A; --text: #ECEEE6; --secondary: #B9C0B2; --line: #2E3A32; --accent: #E8C26A; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 var(--sans); }
+a { color: var(--accent); }
+a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 max(20px, env(safe-area-inset-left)) 0 max(20px, env(safe-area-inset-right)); }
+header.bar { border-bottom: 1px solid var(--line); }
+header.bar .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-block: 16px; }
+.name { font: 600 22px/1 var(--serif); color: var(--text); text-decoration: none; }
+.name em { font-weight: 400; }
+main { padding-block: 32px 56px; }
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 36px; margin: 0 0 20px; }
+h2 { font-size: 24px; margin: 36px 0 10px; }
+h3 { font-size: 19px; margin: 28px 0 8px; }
+p, li { max-width: 68ch; }
+code { font-size: 0.88em; background: var(--surface); padding: 1px 5px; border-radius: 5px; }
+blockquote { margin: 0 0 20px; padding: 10px 14px; border-left: 3px solid var(--sun); background: var(--surface); }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+footer { border-top: 1px solid var(--line); font-size: 15px; color: var(--secondary); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 18px; padding-block: 20px 40px; }
+.draft { background: #8A1C1C; color: #FFFFFF; text-align: center; padding: 8px; font-weight: 600; }
+.hero { position: relative; background: var(--field); color: var(--field-text); }
+/* The scene keeps its proportions, so the tree is never cut, and fades into the field on wide screens. */
+.hero img { display: block; width: 100%; max-width: 980px; max-height: 70vh; margin: 0 auto; aspect-ratio: 7 / 5;
+  object-fit: cover; object-position: 50% 76%; }
+@media (min-width: 980px) {
+  .hero img { -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent); }
+}
+.hero .wrap { padding-block: 8px 36px; }
+.hero h1 { font-size: clamp(44px, 9vw, 64px); font-weight: 300; margin: 0 0 12px; }
+.hero h1 em { font-weight: 300; }
+.hero p { font-size: 20px; color: #B9C0B2; margin: 0; }
+</style>
+</head>
+<body>
+
+
+<section class="hero"><img src="./start.jpg" alt=""><div class="wrap"><h1>Tree <em>Years</em></h1><p>Plant a tree, look in once a day, and watch it grow for years: through dry summers, late frosts and long winters.</p></div></section>
+<main><div class="wrap">
+<h2>One day, one year</h2>
+<p>Every real day is a year in your tree's life. When you look in, the year since your last visit plays out: leaves come and fall, roots reach for water, the trunk grows a ring.</p>
+<h2>A tree that lives</h2>
+<p>Your tree needs water and makes sugar from light. A dry summer sheds its leaves, a late frost burns the new ones, and a storm can break a limb. Look below the ground in the X-ray soil view to see its roots, the water in the soil, and the sugar it stores for spring. One day it dies, and stays in your list as a memory.</p>
+<h2>Two ways to see it</h2>
+<p>Paint it in soft light, or as 16-bit pixel art. The app's icon can follow.</p>
+<h2>Made for everyone</h2>
+<p>VoiceOver describes every part of the tree, from the crown to the soil, and says what changed after each visit. The app follows larger text, dark mode, increased contrast and reduced motion, and never relies on colour alone.</p>
+<h2>Calm and private</h2>
+<p>No account, no ads, no tracking. Your trees stay on your iPhone.</p>
+<p>Coming to the App Store, for iPhone.</p>
+</div></main>
+<footer><div class="wrap"><a href="./support/">Support</a> <a href="./privacy/">Privacy</a> <a href="./datenschutz/">Datenschutz</a> <a href="./imprint/">Imprint</a> <a href="./impressum/">Impressum</a> <a href="./licences/">Licences</a></div></footer>
+</body>
+</html>
