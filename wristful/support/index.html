@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support · Wristful</title>
+<meta name="description" content="Wristful: a quiet meditation timer for iPhone and Apple Watch, with taps you feel rather than hear.">
+<link rel="icon" href="../icon.png">
+<link rel="apple-touch-icon" href="../icon.png">
+
+<style>
+/* Dusk, the app's palette (#9): dusk blue-black, warm text, a sand accent, rounded type. Dark like the app. */
+:root {
+  --bg: #12151D; --surface: #1B2030; --raised: #262C3E; --text: #ECE6DA; --muted: #9AA1B2; --line: #262C3E;
+  --sand: #E3C495; color-scheme: dark;
+  --rounded: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 var(--rounded); }
+a { color: var(--sand); }
+a:focus-visible { outline: 3px solid var(--sand); outline-offset: 2px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 max(20px, env(safe-area-inset-left)) 0 max(20px, env(safe-area-inset-right)); }
+header.bar { border-bottom: 1px solid var(--line); }
+header.bar .wrap { display: flex; align-items: center; gap: 12px; padding-block: 14px; }
+header.bar img { width: 32px; height: 32px; border-radius: 8px; }
+.name { font: 600 21px/1 var(--rounded); color: var(--text); text-decoration: none; }
+main { padding-block: 32px 56px; }
+h1, h2, h3, h4 { font-weight: 600; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 34px; margin: 0 0 20px; }
+h2 { font-size: 23px; margin: 36px 0 10px; }
+h3 { font-size: 19px; margin: 28px 0 8px; }
+p, li { max-width: 68ch; }
+strong { font-weight: 600; }
+code { font-size: 0.88em; background: var(--surface); padding: 1px 5px; border-radius: 5px; }
+blockquote { margin: 0 0 20px; padding: 10px 14px; border-left: 3px solid var(--sand); background: var(--surface); border-radius: 0 10px 10px 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+footer { border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 18px; padding-block: 20px 40px; }
+.draft { background: #8A1C1C; color: #FFFFFF; text-align: center; padding: 8px; font-weight: 600; }
+/* The start page: the icon in its still point and ripples, the name, and the line under it. */
+.hero { text-align: center; padding: 56px 0 24px; background: radial-gradient(circle at 50% 120px, var(--surface) 0, var(--bg) 300px); }
+.hero .ripples { width: 300px; height: 300px; margin: 0 auto; display: grid; place-items: center;
+  background: radial-gradient(circle, transparent 0 99px, rgba(227, 196, 149, 0.22) 100px 101px, transparent 102px 139px,
+    rgba(227, 196, 149, 0.12) 140px 141px, transparent 142px); }
+.hero img { width: 128px; height: 128px; border-radius: 29px; }
+.hero h1 { font-size: clamp(40px, 9vw, 56px); font-weight: 600; margin: 28px 0 8px; }
+.hero p { font-size: 20px; color: var(--muted); margin: 0 auto; padding: 0 20px; }
+</style>
+</head>
+<body>
+
+<header class="bar"><div class="wrap"><img src="../icon.png" alt=""><a class="name" href="../">Wristful</a></div></header>
+
+<main><div class="wrap">
+<h1>Support</h1>
+<p>Questions, problems or ideas? Write to <a href="mailto:harald.meyer@gmail.com">harald.meyer@gmail.com</a>. I read every message, and usually answer within a few days.</p>
+<h2>Do I need an Apple Watch?</h2>
+<p>Yes. The meditation runs on the watch, so the taps reach your wrist with the screen dark. The iPhone app is where you plan your meditations, set reminders and look back. Wristful needs an iPhone with iOS 26 or later and an Apple Watch with watchOS 26 or later.</p>
+<h2>What do the taps mean?</h2>
+<p>Count them: one swell for an interval, two for the next round, three and a soft bell for the end. On the watch, <strong>Settings → Feel test</strong> lets you try them.</p>
+<h2>I don't notice the taps</h2>
+<p>Wear the watch snug. If the swells are too soft for you, choose <strong>Strong</strong> under <strong>Taps</strong> in the watch's Settings. Strong taps are firm, but watchOS plays a faint sound with them unless your watch is in Silent Mode.</p>
+<h2>Why can't I meditate longer than 55 minutes?</h2>
+<p>Without a workout, watchOS keeps Wristful running for about an hour, so a longer meditation doesn't start without one. For longer meditations, turn on <strong>Record as workout</strong> in the watch's Settings. It also saves a Mind &amp; Body workout in Fitness, with your heart rate every few seconds, and counts towards your Activity rings.</p>
+<h2>Can I start without touching the iPhone?</h2>
+<p>Yes:</p>
+<ul><li>Ask Siri: "Start a meditation in Wristful" (your usual one), "Start a 20-minute meditation in Wristful", or a meditation by its name.</li><li>Add the complication to a watch face. It can start any of your meditations.</li><li>Around your reminder times, the Smart Stack offers your usual meditation.</li><li>On Apple Watch Ultra, set the Action button to <strong>Start usual meditation</strong>.</li></ul>
+<h2>Where is my data?</h2>
+<p>On your iPhone and Apple Watch, and in Apple Health if you allow it. Wristful doesn't go online, and there's no account. After a reinstall or on a new iPhone, Wristful brings back your history from Apple Health, as far as Health still has the entries. See the <a href="../privacy/">privacy policy</a>.</p>
+<h2>Accessibility</h2>
+<p>Wristful works with VoiceOver, larger text and Reduce Motion. During a meditation, VoiceOver announces nothing on its own, so nothing is heard in a quiet room, and End comes first. If something doesn't work for you, please write: it's a bug.</p>
+<h2>Legal</h2>
+<p><a href="../imprint/">Imprint</a> · <a href="../impressum/">Impressum</a> · <a href="../privacy/">Privacy policy</a> · <a href="../datenschutz/">Datenschutzerklärung</a></p>
+</div></main>
+<footer><div class="wrap"><a href="../support/">Support</a> <a href="../privacy/">Privacy</a> <a href="../datenschutz/">Datenschutz</a> <a href="../imprint/">Imprint</a> <a href="../impressum/">Impressum</a></div></footer>
+</body>
+</html>

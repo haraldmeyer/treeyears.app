@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wristful</title>
+<meta name="description" content="Wristful: a quiet meditation timer for iPhone and Apple Watch, with taps you feel rather than hear.">
+<link rel="icon" href="./icon.png">
+<link rel="apple-touch-icon" href="./icon.png">
+
+<style>
+/* Dusk, the app's palette (#9): dusk blue-black, warm text, a sand accent, rounded type. Dark like the app. */
+:root {
+  --bg: #12151D; --surface: #1B2030; --raised: #262C3E; --text: #ECE6DA; --muted: #9AA1B2; --line: #262C3E;
+  --sand: #E3C495; color-scheme: dark;
+  --rounded: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 var(--rounded); }
+a { color: var(--sand); }
+a:focus-visible { outline: 3px solid var(--sand); outline-offset: 2px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 max(20px, env(safe-area-inset-left)) 0 max(20px, env(safe-area-inset-right)); }
+header.bar { border-bottom: 1px solid var(--line); }
+header.bar .wrap { display: flex; align-items: center; gap: 12px; padding-block: 14px; }
+header.bar img { width: 32px; height: 32px; border-radius: 8px; }
+.name { font: 600 21px/1 var(--rounded); color: var(--text); text-decoration: none; }
+main { padding-block: 32px 56px; }
+h1, h2, h3, h4 { font-weight: 600; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 34px; margin: 0 0 20px; }
+h2 { font-size: 23px; margin: 36px 0 10px; }
+h3 { font-size: 19px; margin: 28px 0 8px; }
+p, li { max-width: 68ch; }
+strong { font-weight: 600; }
+code { font-size: 0.88em; background: var(--surface); padding: 1px 5px; border-radius: 5px; }
+blockquote { margin: 0 0 20px; padding: 10px 14px; border-left: 3px solid var(--sand); background: var(--surface); border-radius: 0 10px 10px 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+footer { border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 18px; padding-block: 20px 40px; }
+.draft { background: #8A1C1C; color: #FFFFFF; text-align: center; padding: 8px; font-weight: 600; }
+/* The start page: the icon in its still point and ripples, the name, and the line under it. */
+.hero { text-align: center; padding: 56px 0 24px; background: radial-gradient(circle at 50% 120px, var(--surface) 0, var(--bg) 300px); }
+.hero .ripples { width: 300px; height: 300px; margin: 0 auto; display: grid; place-items: center;
+  background: radial-gradient(circle, transparent 0 99px, rgba(227, 196, 149, 0.22) 100px 101px, transparent 102px 139px,
+    rgba(227, 196, 149, 0.12) 140px 141px, transparent 142px); }
+.hero img { width: 128px; height: 128px; border-radius: 29px; }
+.hero h1 { font-size: clamp(40px, 9vw, 56px); font-weight: 600; margin: 28px 0 8px; }
+.hero p { font-size: 20px; color: var(--muted); margin: 0 auto; padding: 0 20px; }
+</style>
+</head>
+<body>
+
+
+<section class="hero"><div class="ripples"><img src="./icon.png" alt=""></div><h1>Wristful</h1><p>A quiet meditation timer you feel rather than hear.</p></section>
+<main><div class="wrap">
+<h2>Taps you can count</h2>
+<p>Wristful times your meditation on Apple Watch and marks it with silent taps on your wrist: one for an interval, two for the next round, three and a soft bell at the end. There's nothing to look at, so it fits a quiet room and a group.</p>
+<h2>Plan on the iPhone, sit with the watch</h2>
+<p>Set up your meditations on the iPhone: the length, a cue every few minutes, rounds of sitting and walking. Start one from the iPhone or the watch, by asking Siri, from a complication, or with the Action button on Apple Watch Ultra.</p>
+<h2>Every sitting kept</h2>
+<p>Each meditation goes to Apple Health as Mindful Minutes and, if you like, to Apple Fitness as a Mind &amp; Body workout. History shows each one with your heart rate, and your week in plain numbers: no streaks, no scores.</p>
+<h2>A gentle reminder</h2>
+<p>Reminders at the times you choose, which stay quiet on a day you've already meditated. One touch starts your usual meditation on the watch.</p>
+<h2>Calm and private</h2>
+<p>No account, no ads, no tracking. Your meditations stay on your iPhone and Apple Watch, and in Apple Health.</p>
+<p>Coming to the App Store, for iPhone and Apple Watch.</p>
+</div></main>
+<footer><div class="wrap"><a href="./support/">Support</a> <a href="./privacy/">Privacy</a> <a href="./datenschutz/">Datenschutz</a> <a href="./imprint/">Imprint</a> <a href="./impressum/">Impressum</a></div></footer>
+</body>
+</html>

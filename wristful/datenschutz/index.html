@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Datenschutzerklärung · Wristful</title>
+<meta name="description" content="Wristful: a quiet meditation timer for iPhone and Apple Watch, with taps you feel rather than hear.">
+<link rel="icon" href="../icon.png">
+<link rel="apple-touch-icon" href="../icon.png">
+
+<style>
+/* Dusk, the app's palette (#9): dusk blue-black, warm text, a sand accent, rounded type. Dark like the app. */
+:root {
+  --bg: #12151D; --surface: #1B2030; --raised: #262C3E; --text: #ECE6DA; --muted: #9AA1B2; --line: #262C3E;
+  --sand: #E3C495; color-scheme: dark;
+  --rounded: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 var(--rounded); }
+a { color: var(--sand); }
+a:focus-visible { outline: 3px solid var(--sand); outline-offset: 2px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 max(20px, env(safe-area-inset-left)) 0 max(20px, env(safe-area-inset-right)); }
+header.bar { border-bottom: 1px solid var(--line); }
+header.bar .wrap { display: flex; align-items: center; gap: 12px; padding-block: 14px; }
+header.bar img { width: 32px; height: 32px; border-radius: 8px; }
+.name { font: 600 21px/1 var(--rounded); color: var(--text); text-decoration: none; }
+main { padding-block: 32px 56px; }
+h1, h2, h3, h4 { font-weight: 600; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: 34px; margin: 0 0 20px; }
+h2 { font-size: 23px; margin: 36px 0 10px; }
+h3 { font-size: 19px; margin: 28px 0 8px; }
+p, li { max-width: 68ch; }
+strong { font-weight: 600; }
+code { font-size: 0.88em; background: var(--surface); padding: 1px 5px; border-radius: 5px; }
+blockquote { margin: 0 0 20px; padding: 10px 14px; border-left: 3px solid var(--sand); background: var(--surface); border-radius: 0 10px 10px 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+footer { border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 18px; padding-block: 20px 40px; }
+.draft { background: #8A1C1C; color: #FFFFFF; text-align: center; padding: 8px; font-weight: 600; }
+/* The start page: the icon in its still point and ripples, the name, and the line under it. */
+.hero { text-align: center; padding: 56px 0 24px; background: radial-gradient(circle at 50% 120px, var(--surface) 0, var(--bg) 300px); }
+.hero .ripples { width: 300px; height: 300px; margin: 0 auto; display: grid; place-items: center;
+  background: radial-gradient(circle, transparent 0 99px, rgba(227, 196, 149, 0.22) 100px 101px, transparent 102px 139px,
+    rgba(227, 196, 149, 0.12) 140px 141px, transparent 142px); }
+.hero img { width: 128px; height: 128px; border-radius: 29px; }
+.hero h1 { font-size: clamp(40px, 9vw, 56px); font-weight: 600; margin: 28px 0 8px; }
+.hero p { font-size: 20px; color: var(--muted); margin: 0 auto; padding: 0 20px; }
+</style>
+</head>
+<body>
+
+<header class="bar"><div class="wrap"><img src="../icon.png" alt=""><a class="name" href="../">Wristful</a></div></header>
+
+<main><div class="wrap">
+<h1>Datenschutzerklärung</h1>
+<p>Diese Erklärung gilt für die App „Wristful“ für iPhone und Apple Watch und ihre Seiten auf dieser Website (treeyears.app/wristful). Sie erklärt, was mit personenbezogenen Daten nach der Datenschutz-Grundverordnung (DSGVO) geschieht.</p>
+<p>Stand: 11. November 2026</p>
+<h2>Kurz gesagt</h2>
+<ul><li>Deine Meditationen, dein Verlauf, deine Erinnerungen und Einstellungen bleiben auf deinem iPhone und deiner Apple Watch, und in Apple Health, wenn du es erlaubst. Ich erhalte sie nicht, sehe sie nicht und speichere sie nicht.</li><li>Es gibt kein Konto, kein Tracking, keine Werbung, keine Analyse und keinen Code von Dritten.</li><li>Wristful geht nicht online. Dein iPhone und deine Watch sprechen nur miteinander.</li><li>Die App fragt nach zwei Berechtigungen: Apple Health, um deine Meditationen zu sichern und deine Herzfrequenz und Achtsamkeitsminuten zu lesen, und Mitteilungen, nur wenn du eine Erinnerung stellst. Nach keiner anderen: kein Standort, keine Kontakte, keine Fotos, keine Kamera, kein Mikrofon.</li><li>Apple betreibt den App Store, TestFlight und Siri. Absturzberichte gibt Apple nur an mich weiter, wenn du dem Teilen mit App-Entwicklern zugestimmt hast.</li></ul>
+<h2>1. Verantwortlicher</h2>
+<p>Verantwortlicher im Sinne der DSGVO ist:</p>
+<p>Harald Meyer<br>Karl-Heine-Str. 109<br>04229 Leipzig<br>Deutschland<br>E-Mail: <a href="mailto:harald.meyer@gmail.com">harald.meyer@gmail.com</a></p>
+<p>Ich veröffentliche die App als Privatperson. Einen Datenschutzbeauftragten muss ich nicht benennen.</p>
+<h2>2. Was Wristful auf deinen Geräten speichert</h2>
+<ul><li><strong>Deine Meditationen:</strong> die in deiner Bibliothek, mit Namen, Länge, Intervall-Signalen und Runden, und welche deine übliche Meditation ist.</li><li><strong>Dein Verlauf:</strong> zu jeder beendeten Meditation ihr Name, wann sie begann und endete, wie lange sie geplant war und wie lange du gesessen hast, ihre Runden, ob sie früher endete, und deine Herzfrequenz dabei als Durchschnitt, niedrigster und höchster Wert.</li><li><strong>Deine Erinnerungen:</strong> ihre Uhrzeiten, ihr Text und wie sie einen Tag auslassen, an dem du schon meditiert hast.</li><li><strong>Deine Einstellungen:</strong> die Stärke der Signale, die Vorbereitungszeit, ob Meditationen als Training aufgezeichnet werden, und ob du die ersten Schritte abgeschlossen hast.</li><li><strong>Eine laufende Meditation:</strong> solange sie läuft, merkt sich die Watch ihren Stand, damit sie weiterlaufen kann, wenn die App geschlossen wird.</li></ul>
+<p>Diese Daten liegen im eigenen Speicher der App auf deinem iPhone und deiner Watch, den andere Apps nicht lesen können. Die Komplikation, das Steuerelement und die Smart-Stack-Karte der Watch lesen aus dem Speicher der Watch; die Live-Aktivität bekommt ihren Inhalt von der iPhone-App. Dein iPhone und deine Watch tauschen deine Bibliothek, Einstellungen, die Uhrzeiten der Erinnerungen, beendete Meditationen und den Stand einer laufenden Meditation direkt miteinander aus, über Apples Verbindung zwischen gekoppelten Geräten (WatchConnectivity).</p>
+<p>Wristful sendet nichts davon an mich oder an andere, und ich habe keinen Zugriff darauf. Das Speichern auf deinen Geräten ist unbedingt erforderlich, damit der Timer funktioniert, den du nutzen willst; deshalb fragt die App nicht nach einer Einwilligung (§ 25 Abs. 2 Nr. 2 Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz, TDDDG).</p>
+<p><strong>Wie lange, und wie du die Daten löschst:</strong> Eine Meditation bleibt in deinem Verlauf, bis du sie im Verlauf löschst oder die App löschst. Wenn du die App löschst, werden ihre Daten von diesem Gerät entfernt; lösche sie auf iPhone und Watch, um alles zu entfernen. Kopien in Backups bleiben, bis diese Backups ersetzt oder gelöscht werden (siehe Abschnitt 6).</p>
+<h2>3. Apple Health</h2>
+<p>Wristful arbeitet nur mit Apple Health, wenn du es erlaubst, in der Abfrage, die iOS und watchOS zeigen. Du kannst jede Art von Daten einzeln wählen.</p>
+<ul><li><strong>Was die App sichert:</strong> jede Meditation ab einer Minute als Achtsamkeitsminuten, mit dem Namen der Meditation und ihren geplanten und tatsächlichen Minuten. Wenn du „Als Training aufzeichnen“ einschaltest, sichert sie außerdem ein Training „Körper &amp; Geist“, mit der Herzfrequenz und der Energie, die die Watch dabei gemessen hat; Apple Fitness zeigt es bei deinen Trainings.</li><li><strong>Was die App liest:</strong> deine Herzfrequenz während deiner Meditationen, um sie im Verlauf zu zeigen; deine Achtsamkeitsminuten, damit eine Erinnerung einen Tag auslassen kann, an dem du schon meditiert hast, und um deinen Verlauf auf einem neuen iPhone wiederherzustellen; und die Einträge, die sie selbst gesichert hat, um sie zu löschen, wenn du eine Meditation im Verlauf löschst.</li></ul>
+<p>Gesundheitsdaten bleiben in Apple Health. Wristful liest sie nur auf deinen Geräten und sendet sie nirgendwohin. Apple speichert Gesundheitsdaten verschlüsselt auf deinen Geräten und synchronisiert sie über iCloud nur, wenn du das eingeschaltet hast, Ende-zu-Ende-verschlüsselt (<a href="https://www.apple.com/legal/privacy/data/de/health-app/">Health und Datenschutz</a>).</p>
+<p>Herzfrequenz und Achtsamkeitsminuten sind Gesundheitsdaten (Art. 9 DSGVO). Wristful verarbeitet sie nur mit deiner ausdrücklichen Einwilligung, die du in der Abfrage gibst (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO). Du kannst sie jederzeit widerrufen, für jede Art von Daten einzeln, in den Einstellungen des iPhones unter Datenschutz &amp; Sicherheit → Health → Wristful, oder in der Health-App. Der Widerruf ändert nichts an dem, was vorher geschah. Die Einträge, die Wristful gesichert hat, bleiben in Health, bis du sie dort oder im Verlauf von Wristful löschst.</p>
+<h2>4. Erinnerungen</h2>
+<p>Wenn du eine Erinnerung stellst, bittet die App iOS um die Erlaubnis, dir Mitteilungen zu senden, und plant sie zu den Uhrzeiten, die du gewählt hast, mit dem Text, den du ihnen gegeben hast. Die Mitteilungen erstellt und verwahrt iOS auf deinem iPhone; nichts davon geht an mich oder an einen Server. <em>Jetzt meditieren</em> in einer Erinnerung startet deine übliche Meditation auf deiner Watch. Deine Watch kennt die Uhrzeiten der Erinnerungen, ohne ihren Text, um dir um diese Zeiten deine übliche Meditation im Smart Stack anzubieten.</p>
+<p>Du kannst Erinnerungen in den Einstellungen der App ändern oder entfernen, und Mitteilungen in den Einstellungen des iPhones abschalten.</p>
+<h2>5. Siri, Kurzbefehle, Widgets und die Live-Aktivität</h2>
+<ul><li><strong>Siri und Kurzbefehle.</strong> Wenn du eine Meditation mit Siri startest, verarbeitet Apple deine Anfrage nach seiner eigenen Datenschutzrichtlinie (<a href="https://www.apple.com/legal/privacy/data/de/ask-siri-dictation/">Siri und Datenschutz</a>). Wristful erfährt nur, welche Meditation starten soll. Die Namen deiner Meditationen gibt die App auf deinem Gerät an Siri weiter, damit Siri sie versteht.</li><li><strong>Die Komplikation, die Smart-Stack-Karte, das Steuerelement im Kontrollzentrum und die Live-Aktivität</strong> zeigen den Namen und die Zeiten einer Meditation auf deinem Zifferblatt und dem Sperrbildschirm deines iPhones. Sie entstehen auf deinen Geräten. Wer auf deine Watch oder deinen Sperrbildschirm schaut, kann sie sehen; du kannst sie entfernen oder Live-Aktivitäten für Wristful in den Einstellungen des iPhones ausschalten.</li></ul>
+<h2>6. Backups und iCloud</h2>
+<p>Wie die Daten anderer Apps sind die Daten von Wristful auf deinem iPhone Teil der Backups des iPhones: im iCloud-Backup, wenn du es eingeschaltet hast, oder in einem Backup auf deinem Computer. Dazu gehören dein Verlauf, deine Bibliothek, deine Erinnerungen und Einstellungen; was die Watch speichert, bekommt sie vom iPhone zurück, wenn beide verbunden sind. Apple speichert iCloud-Backups nach seiner eigenen Datenschutzrichtlinie; mit dem erweiterten Datenschutz für iCloud („Advanced Data Protection“) sind sie Ende-zu-Ende-verschlüsselt (<a href="https://support.apple.com/de-de/102651">Übersicht zur Sicherheit von iCloud-Daten</a>). Ich habe keinen Zugriff darauf. In deinen iCloud-Einstellungen kannst du wählen, ob diese App im iCloud-Backup enthalten ist.</p>
+<p>Wristful synchronisiert nicht selbst über iCloud. Apple Health synchronisiert deine Gesundheitsdaten, auch was Wristful gesichert hat, wenn du Health in iCloud eingeschaltet hast.</p>
+<h2>7. Apple: App Store, Absturzberichte und TestFlight</h2>
+<p>Apple ist für seine eigenen Dienste selbst verantwortlich und verarbeitet Daten nach seiner eigenen Datenschutzrichtlinie. Im Europäischen Wirtschaftsraum ist Verantwortlicher die Apple Distribution International Ltd. in Irland. Siehe die <a href="https://www.apple.com/de/legal/privacy/de-ww/">Datenschutzrichtlinie von Apple</a> und <a href="https://www.apple.com/legal/privacy/data/de/app-store/">App Store und Datenschutz</a>.</p>
+<ul><li><strong>Laden und Aktualisieren.</strong> Apple verarbeitet deinen Apple Account und die Angaben zum Download. Ich erhalte sie nicht. Apple gibt mir Statistiken, die dich nicht erkennbar machen, etwa die Zahl der Downloads je Land. Bewertungen, die du im App Store schreibst, sind öffentlich, und ich kann dort darauf antworten.</li><li><strong>Absturzberichte und Nutzungsstatistiken.</strong> Nur wenn du „Mit App-Entwicklungsteams teilen“ eingeschaltet hast (Einstellungen → Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen), sendet Apple mir Absturzberichte und Nutzungsstatistiken der App. Ein Absturzbericht enthält technische Angaben wie das Modell von iPhone oder Watch, die System- und App-Version und was die App beim Absturz gerade tat. Apple stellt sie in einer Form bereit, die dich nicht erkennbar macht (<a href="https://www.apple.com/legal/privacy/data/de/app-analytics/">App-Analyse und Datenschutz</a>). Ich nutze sie nur, um Fehler zu finden und zu beheben; das beruht auf meinem berechtigten Interesse an einer App, die funktioniert (Art. 6 Abs. 1 lit. f DSGVO). Kopien behalte ich nicht länger, als die Fehlerbehebung dauert. Du kannst das Teilen jederzeit in derselben Einstellung ausschalten.</li><li><strong>TestFlight (nur für Beta-Tester).</strong> Wenn du eine Beta-Version über TestFlight testest, gibt Apple mir: den Namen und die E-Mail-Adresse, mit denen ich dich eingeladen habe (nicht, wenn du über einen öffentlichen Link teilnimmst), ob du die Einladung angenommen und die App installiert hast, dein Gerätemodell, deine Systemversion und Sprache, die Zahl der Sitzungen und Abstürze, Absturzberichte und jedes Feedback, das du sendest (deinen Kommentar, Bildschirmfotos und technische Angaben wie Akkustand, freien Speicher, Zeitzone und Verbindungsart). Ich nutze das nur, um den Test durchzuführen und die App zu verbessern, und gebe es nicht weiter. Das beruht auf deiner Teilnahme am Test (Art. 6 Abs. 1 lit. b DSGVO) und auf meinem berechtigten Interesse, Fehler zu beheben (Art. 6 Abs. 1 lit. f DSGVO). Ich entferne Tester und ihre Angaben, wenn der Test endet oder wenn sie darum bitten; Apple bewahrt Feedback ein Jahr lang auf (<a href="https://www.apple.com/legal/privacy/data/de/test-flight/">TestFlight und Datenschutz</a>).</li></ul>
+<h2>8. Wenn du mir schreibst</h2>
+<p>Wenn du mir eine E-Mail schreibst, verarbeite ich deine E-Mail-Adresse, deinen Namen, falls du ihn angibst, deine Nachricht und alle Anhänge, um dir zu antworten. Das beruht auf meinem berechtigten Interesse, deine Anfrage zu beantworten (Art. 6 Abs. 1 lit. f DSGVO), oder auf deiner Teilnahme an einem Beta-Test (Art. 6 Abs. 1 lit. b DSGVO). Ich lösche die E-Mails, wenn die Sache erledigt ist, spätestens nach 12 Monaten, sofern das Gesetz keine längere Aufbewahrung verlangt. Deine E-Mails an mich liegen bei Gmail, einem Dienst der Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland), die sie nach ihrer eigenen <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung</a> verarbeitet. Google kann Daten in den USA verarbeiten; die Google LLC ist nach dem EU-US-Datenschutzrahmen (EU-U.S. Data Privacy Framework) zertifiziert, für den die Europäische Kommission einen Angemessenheitsbeschluss erlassen hat (Art. 45 DSGVO). Einen E-Mail-Dienst dafür zu nutzen, beruht auf meinem berechtigten Interesse an einem zuverlässigen Postfach (Art. 6 Abs. 1 lit. f DSGVO).</p>
+<h2>9. Diese Website</h2>
+<p>Diese Seiten liegen bei GitHub Pages von GitHub (GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, Niederlande, und GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Wenn du eine Seite öffnest, sendet dein Browser deine IP-Adresse und die Angaben der Anfrage an GitHub; GitHub protokolliert die IP-Adressen der Besucher aus Sicherheitsgründen. Ich kann diese Protokolle nicht einsehen. Die Website so zu betreiben, beruht auf meinem berechtigten Interesse an einer zuverlässigen und sicheren Website (Art. 6 Abs. 1 lit. f DSGVO). GitHub kann Daten in den USA verarbeiten; GitHub, Inc. ist nach dem EU-US-Datenschutzrahmen (EU-U.S. Data Privacy Framework) zertifiziert, für den die Europäische Kommission einen Angemessenheitsbeschluss erlassen hat (Art. 45 DSGVO). Siehe die <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+<p>Die Website setzt keine Cookies, nutzt keine Analyse und lädt keine Schriften, Skripte oder anderen Inhalte von fremden Servern.</p>
+<h2>10. Kein Tracking, keine Werbung, kein Code von Dritten</h2>
+<p>Die App enthält keinen Werbe-, Analyse- oder Absturzmelde-Code anderer Firmen und keinen anderen Code von Dritten. Sie hat kein Konto und keine Social-Media-Schaltflächen. Sie verfolgt dich nicht über Apps oder Websites hinweg, nutzt deine Werbe-ID nicht und verkauft oder teilt deine Daten mit niemandem. Sie nutzt nur Apples Frameworks, die Teil von iOS und watchOS sind.</p>
+<h2>11. Kinder</h2>
+<p>Wristful ist für alle gedacht. Da die App von niemandem personenbezogene Daten erhebt, erhebt sie auch keine von Kindern.</p>
+<h2>12. Deine Rechte</h2>
+<p>Nach der DSGVO hast du das Recht auf Auskunft über die Daten, die ich über dich habe (Art. 15), auf Berichtigung (Art. 16), auf Löschung (Art. 17), auf Einschränkung der Verarbeitung (Art. 18), auf Datenübertragbarkeit (Art. 20), auf Widerspruch gegen Verarbeitungen, die auf berechtigten Interessen beruhen (Art. 21; Abschnitte 7, 8 und 9), und darauf, deine Einwilligung jederzeit zu widerrufen (Art. 7 Abs. 3; Abschnitt 3). Schreib mir dazu an <a href="mailto:harald.meyer@gmail.com">harald.meyer@gmail.com</a>.</p>
+<p>Ich habe keine Daten über dich, außer du hast mir geschrieben oder eine Beta getestet. Die Daten auf deinen Geräten und in Apple Health hast du bereits selbst in der Hand: Du kannst jederzeit Meditationen oder die ganze App löschen. Für Daten, die Apple hat, nutze Apples Seite „Daten und Datenschutz“ unter privacy.apple.com oder <a href="https://www.apple.com/de/legal/privacy/contact/">wende dich an Apple</a>.</p>
+<p>Du musst keine personenbezogenen Daten angeben, um die App zu nutzen; auch ohne Apple Health misst sie die Zeit deiner Meditationen. Es gibt keine automatisierte Entscheidungsfindung und kein Profiling.</p>
+<p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO), insbesondere in dem EU-Land, in dem du lebst oder arbeitest. Für mich zuständig ist:</p>
+<p>Sächsische Datenschutz- und Transparenzbeauftragte<br>Maternistraße 17, 01067 Dresden<br>E-Mail: post@sdtb.sachsen.de<br>Website: <a href="https://www.datenschutz.sachsen.de/">www.datenschutz.sachsen.de</a></p>
+<h2>13. Änderungen dieser Erklärung</h2>
+<p>Ich passe diese Erklärung an, bevor die App oder die Website ändert, wie sie mit personenbezogenen Daten umgeht, zum Beispiel wenn die App eine iCloud-Synchronisierung oder Online-Funktionen bekommt. Das Datum oben zeigt den Stand. Frühere Fassungen findest du im öffentlichen Repository der Website: <a href="https://github.com/haraldmeyer/treeyears.app">https://github.com/haraldmeyer/treeyears.app</a>.</p>
+<p>Stand: 11. November 2026</p>
+</div></main>
+<footer><div class="wrap"><a href="../support/">Support</a> <a href="../privacy/">Privacy</a> <a href="../datenschutz/">Datenschutz</a> <a href="../imprint/">Imprint</a> <a href="../impressum/">Impressum</a></div></footer>
+</body>
+</html>
